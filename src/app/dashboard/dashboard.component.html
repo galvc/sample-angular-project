@@ -1,0 +1,26 @@
+<section>
+	<h1>Dashboard</h1>
+	<ul class="team__main">
+		<!-- <ng-container *ngFor="let character of characters">
+			<ng-container *ngIf="character.type === 'main'"> -->
+
+		 <li *ngFor="let character of team; let i = index" >
+			<a routerLink="/select" [state]="{index: i}">
+				<span *ngIf="character; else emptyBlock">{{ character.name }}</span>
+				<ng-template #emptyBlock>Empty</ng-template>
+			</a>
+		</li>
+		<!-- </ng-container>
+		</ng-container> -->
+	</ul>
+
+	<ul class="team__villain">
+		<ng-container *ngFor="let character of characters">
+			<ng-container *ngIf="character.type === 'villain'">
+				<li>
+					{{ character.name }}
+				</li>
+			</ng-container>
+		</ng-container>
+	</ul>
+</section>

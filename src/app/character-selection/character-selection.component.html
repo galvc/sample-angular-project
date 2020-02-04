@@ -1,0 +1,15 @@
+<div class="selection__window">
+	<div class="selection__featured">
+		Image
+		<span *ngIf="selectedCharacter">{{ selectedCharacter.name }}</span>
+	</div>
+
+
+	<ul class="selection__grid">
+		<li *ngFor="let character of characters" (click)="onClick(character)">{{ character.name }}</li>
+	</ul>
+</div>
+
+<span (click)="goBack()">Go Back</span>
+<span>Edit this character</span>
+<app-edit-character [selectedCharacter]="selectedCharacter"></app-edit-character>

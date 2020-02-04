@@ -1,0 +1,41 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "a b";
+  grid-gap: 10px;
+}
+
+h1 {
+  grid-area: header;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+ul.team__main {
+  grid-area: a;
+  background: #EAF3F9;
+}
+
+ul.team__villain {
+  grid-area: b;
+  background: #EFD6D5;
+}
+
+li {
+  width: 100%;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  background: #ebebeb;
+}
