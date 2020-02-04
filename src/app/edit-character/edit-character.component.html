@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="editCharacterForm">
+	<label>
+    Name: 
+    <input type="text" [(ngModel)]="selectedCharacter" formControlName="name">
+  </label>
+	<button type="submit">Submit</button>
+</form>
+
+<button>Cancel</button>
