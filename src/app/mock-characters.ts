@@ -11,12 +11,12 @@ export const CHARACTERS: Character[] = [
   },
   { id: 2,
     type: 'villain',
-    name: 'b',
+    name: 'Gravemind',
     quotes: []
   },
   { id: 3,
     type: 'main',
-    name: 'Cortana',
+    name: 'Rookie',
     quotes: [
       'hello',
       'hi'
@@ -24,7 +24,7 @@ export const CHARACTERS: Character[] = [
   },
   { id: 4,
     type: 'main',
-    name: 'ab',
+    name: 'Sergeant Majory Avery Johnson',
     quotes: [
       'hello',
       'hi'
@@ -32,7 +32,7 @@ export const CHARACTERS: Character[] = [
   },
   { id: 5,
     type: 'villain',
-    name: 'some guy',
+    name: 'Prophet of Mercy',
     quotes: [
       'hello',
       'hi'
@@ -40,7 +40,23 @@ export const CHARACTERS: Character[] = [
   },
   { id: 6,
     type: 'villain',
-    name: 'ac',
+    name: 'Arbiter',
+    quotes: [
+      'hello',
+      'hi'
+    ]
+  },
+    { id: 7,
+    type: 'main',
+    name: 'Emile-239',
+    quotes: [
+      'hello',
+      'hi'
+    ]
+  },
+      { id: 8,
+    type: 'main',
+    name: 'Spartan-312',
     quotes: [
       'hello',
       'hi'
